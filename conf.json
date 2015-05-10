@@ -1,0 +1,10 @@
+{
+    "output": "report.html",
+    "template": "templates/template.html",
+    "tags": ["TODO", "NOTE", "FIXME", "XXX"],
+    "exts": {   ".cpp" : ["//", "/*", "*/"],
+                ".js" : ["//", "/*", "*/"],
+                ".h" : ["//", "/*", "*/"],
+                ".py" : ["#", "", ""]
+            }
+}

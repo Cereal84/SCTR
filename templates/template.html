@@ -1,0 +1,27 @@
+<HTML>
+<head>
+    <title>REPORT</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/utils.js"></script>
+</head>
+<body>
+
+${ for file in comments: }$
+    <div class="filename_as_title">
+        <div class="arrow-right"></div><b>File name </b> ${ file }$
+    </div>
+    <div class="filename">
+        ${ for tag in comments[file]: }$
+            <h3 class="TAG ${ tag }$">${ tag }$</h3>
+            <div class="TAG_body">
+            ${ for line_number, comment_body in comments[file][tag]: }$
+                <b>Line number ${ line_number }$</b>
+                <p class="comment_body">${ comment_body }$</p>
+            ${ :end-for }$
+            </div>   
+        ${ :end-for }$
+    </div>
+${ :end-for }$
+
+</body>
+</HTML>

@@ -1,0 +1,60 @@
+.filename_as_title{
+    margin: auto;
+    width: 1024px;
+    /* border-bottom: solid 2px red;*/
+    font-size: 18px;
+}
+
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	
+	border-left: 10px solid red;
+    float: left;
+    margin-right: 10px;
+}
+
+.filename{
+    margin: auto;
+    padding: 5px;
+    width: 1024px;
+}
+
+.TAG{
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+}
+
+.TAG_body{
+    padding: 10px;
+    background-color: #EDEDED;
+    margin-bottom: 10px;
+}
+
+.TODO{
+    background-color: #98FB98 ;
+}
+
+.FIXME{
+    background-color: #FF4D4D;
+}
+
+.NOTE{
+    background-color: #B5DAFF;
+}
+
+.XXX{
+    background-color: #FFCC66;
+}
+
+.comment_body{
+    border: 1px solid grey;
+    background-color: white;
+    font-family: courier;
+    color: black;
+    width: 80%;
+    padding: 10px;
+}
