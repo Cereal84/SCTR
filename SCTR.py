@@ -250,7 +250,7 @@ if __name__ == '__main__':
     
     # use the template file
     file_template = Templite(None, template_filename)
-    new_content = file_template.render(comments=comments_list)
+    new_content = file_template.render(comments=comments_list, sctr_path=root)
 
     # time to write down 
     report_file = open(output_filename, "w")
