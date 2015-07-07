@@ -156,8 +156,8 @@ multi line comment chars.
 How to create a template
 ------------------------
 
-The script provides the data, through the variable *comments*, that feeds the
-template file. The data has the following format.
+The script provides the data, through the variable *comments* and *sctr_path* 
+that feeds the template file. *Comments* has the following format.
 
     comments[filename_1][tag_name_1] <line_number, comment_body>
                .....
@@ -170,13 +170,17 @@ template file. The data has the following format.
 and the comment itself. Below you can find an example of template that is even
 the default template used by the script.
 
+Instead *sctr_path* is the absolute path of the SCTR folder in your system. It 
+is used to locate the file *style.css* in the *SCTR/css* folder, quite useful
+for the *template.html* file.
+
 ###Example
 
 
     <HTML>
       <head>
           <title>REPORT</title>
-          <link href="css/style.css" rel="stylesheet" type="text/css">
+          <link href="${ sctr_path }/css/style.css" rel="stylesheet" type="text/css">
       </head>
       <body>
 
@@ -203,6 +207,11 @@ the default template used by the script.
 
 **Note: ** The template engine used is [**templite**]
 (http://www.joonis.de/en/code/templite).
+
+At the current version of *SCTR* I suggest you to create your own template and 
+css file the *templates*, *css* folders locate in the *SCTR* folder. In this way
+ the script and the template can locate the files correctly without change the 
+script.
 
 Version
 ---------
